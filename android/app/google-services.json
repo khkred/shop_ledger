@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "894187660680",
+    "project_id": "shop-ledger-a910a",
+    "storage_bucket": "shop-ledger-a910a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894187660680:android:941a9b4691b19e68ab463d",
+        "android_client_info": {
+          "package_name": "com.khkr.shop_ledger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPQP4Npidiu_yvRRMoN4DkMeYGdlb07bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
