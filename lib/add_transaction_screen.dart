@@ -24,13 +24,26 @@ class _AddTransactionScreenState extends State<AddTransactionScreen> {
           builder: (context) => Form(
               key: _formKey,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   TextFormField(
+                    keyboardType: TextInputType.number,
                     decoration: const InputDecoration(labelText: 'Amount'),
                     validator: (value) {
 
                     },
+                  ),
+
+                  TextFormField(
+                    decoration:  const InputDecoration(labelText: 'Item'),
+                  ),
+                  const SizedBox(height: 10,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ElevatedButton(onPressed: (){}, child: const Text('Submit'))
+                    ],
                   ),
                 ],
               )),
