@@ -11,7 +11,7 @@ class AddTransactionScreen extends StatefulWidget {
 
 class _AddTransactionScreenState extends State<AddTransactionScreen> {
 
-  final _formKey = GlobalKey();
+  final _formKey = GlobalKey<FormState>();
   String name = '';
   double amount = 0;
   @override
@@ -31,8 +31,11 @@ class _AddTransactionScreenState extends State<AddTransactionScreen> {
                     keyboardType: TextInputType.number,
                     decoration: const InputDecoration(labelText: 'Amount'),
                     validator: (value) {
-
-                    },
+                      if(value == null || value.isEmpty)
+                        {
+                          return 'Please Enter a value';
+                        }
+                    }
                   ),
 
                   TextFormField(
@@ -42,7 +45,11 @@ class _AddTransactionScreenState extends State<AddTransactionScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      ElevatedButton(onPressed: (){}, child: const Text('Submit'))
+                      ElevatedButton(onPressed: (){
+                        if(_formKey.currentState!.validate()){
+
+                        }
+                      }, child: const Text('Submit'))
                     ],
                   ),
                 ],
