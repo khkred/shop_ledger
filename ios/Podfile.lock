@@ -16,11 +16,31 @@ PODS:
   - GoogleUtilities/Logger (7.11.5):
     - GoogleUtilities/Environment
   - "GoogleUtilities/NSData+zlib (7.11.5)"
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
   - PromisesObjC (2.3.1)
+  - sqlite3 (3.44.0):
+    - sqlite3/common (= 3.44.0)
+  - sqlite3/common (3.44.0)
+  - sqlite3/fts5 (3.44.0):
+    - sqlite3/common
+  - sqlite3/perf-threadsafe (3.44.0):
+    - sqlite3/common
+  - sqlite3/rtree (3.44.0):
+    - sqlite3/common
+  - sqlite3_flutter_libs (0.0.1):
+    - Flutter
+    - sqlite3 (~> 3.44.0)
+    - sqlite3/fts5
+    - sqlite3/perf-threadsafe
+    - sqlite3/rtree
 
 DEPENDENCIES:
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - Flutter (from `Flutter`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - sqlite3_flutter_libs (from `.symlinks/plugins/sqlite3_flutter_libs/ios`)
 
 SPEC REPOS:
   trunk:
@@ -29,12 +49,17 @@ SPEC REPOS:
     - FirebaseCoreInternal
     - GoogleUtilities
     - PromisesObjC
+    - sqlite3
 
 EXTERNAL SOURCES:
   firebase_core:
     :path: ".symlinks/plugins/firebase_core/ios"
   Flutter:
     :path: Flutter
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  sqlite3_flutter_libs:
+    :path: ".symlinks/plugins/sqlite3_flutter_libs/ios"
 
 SPEC CHECKSUMS:
   Firebase: 07150e75d142fb9399f6777fa56a187b17f833a0
@@ -43,7 +68,10 @@ SPEC CHECKSUMS:
   FirebaseCoreInternal: b342e37cd4f5b4454ec34308f073420e7920858e
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
+  path_provider_foundation: 29f094ae23ebbca9d3d0cec13889cd9060c0e943
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  sqlite3: 6e2d4a4879854d0ec86b476bf3c3e30870bac273
+  sqlite3_flutter_libs: eb769059df0356dc52ddda040f09cacc9391a7cf
 
 PODFILE CHECKSUM: 70d9d25280d0dd177a5f637cdb0f0b0b12c6a189
 
